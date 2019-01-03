@@ -177,6 +177,9 @@
 
 	p {
 		margin: 0 0 1.5em 0;
+		max-width: 75%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -242,7 +245,6 @@
 		border-bottom: solid 1px #c8cccf;
 		margin: 3em 0;
 	}
-
 
 /* Icon */
 
@@ -360,7 +362,7 @@
 					}
 
 					ul.icons li a:hover {
-						border-color: #ff7496;
+						border-color: #FDC3E0;
 					}
 
 			@media screen and (max-width: 480px) {
@@ -433,8 +435,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #ff7496;
-			color: #ff7496 !important;
+			border-color: #FDC3E0;
+			color: #FDC3E0 !important;
 		}
 
 		input[type="submit"].icon,
@@ -492,9 +494,8 @@
 
 	#main {
 		position: relative;
-		max-width: 100%;
-		min-width: 27em;
-		padding: 4.5em 3em 3em 3em ;
+		width: 80%;
+		padding: 3.5em 3em 3em 3em ;
 		background: #ffffff;
 		border-radius: 4px;
 		cursor: default;
@@ -562,6 +563,41 @@
 			transform: rotateX(15deg);
 		}
 
+/* Navigation Bar*/
+	#nav {
+		padding: 2;
+		margin: 2;
+	}
+	
+	#nav ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+	}
+
+	#nav li {
+	  list-style-type: none;
+	  float: left;
+	}
+
+	#nav li a {
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	#nav li a:hover {
+	  background-color: #FDC3E0;
+	}
+	
+	#nav .active {
+	  background-color: #FFE5F2;
+	}
+	
 /* Footer */
 
 	#footer {
@@ -644,3 +680,39 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+/*Resume Page*/
+
+	#left {
+	  float: left;
+	  width: 50%;
+	}
+	
+	#right {
+	  float: left;
+	  width: 50%;
+	}
+	
+	#container li {
+		list-style-type: none;
+	}
+	
+	#update {
+		display: inline-block;
+	}
+	
+/*About Page*/
+	#about {
+		min-height:250px;
+	}
+	
+	#band {
+		float:left;
+		padding-left: 20px;
+	}
+	
+	#aboutband {
+		float:right;
+		width: 65%;
+		padding-top: 50px;
+	}
